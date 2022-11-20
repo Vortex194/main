@@ -1,0 +1,18 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Bloxburg", "Ocean")
+
+local Tab = Window:NewTab("Bloxburg")
+local Section = Tab:NewSection("Remove build and block barriers")
+
+Section:NewToggle("Toggle", "discord.gg/bloxburgepicthing", function(v)
+    for i, v in pairs(workspace.Plots:GetDescendants()) do
+        if v.Name == "Barrier" then
+            v:Destroy()
+        end
+    end
+    for i, v in pairs(workspace.Plots:GetDescendants()) do
+        if v.Name == "BlockPart" then
+            v:Destroy()
+        end
+    end
+end)
