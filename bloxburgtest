@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Bloxburg", "Vortex")
+local Window = Library.CreateLib("Bloxburg", "Ocean")
 
 local Tab = Window:NewTab("Bloxburg")
 local Section = Tab:NewSection("Remove build and block barriers")
